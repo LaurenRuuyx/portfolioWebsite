@@ -1,6 +1,6 @@
 .App {
   background-color:#282c34;
-  min-height: 300vh;
+  min-height: 500vh;
   align-items: center;
 }
 
@@ -16,23 +16,93 @@
   text-align: center;
 }
 
+.cube-wrap {
+  --size: 30vmin;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  perspective: 100vmin;
+}
+.cube {
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) rotateZ(45deg) rotateY(-45deg);
+  animation: cube 0.5s linear;
+  z-index: -1;
+}
+
+@keyframes cube {
+  to {
+    transform: rotateX(360deg) rotateZ(45deg) rotateY(-45deg);
+  }
+}
+
+.side {
+  animation: example 0.5s linear;
+  border-style: groove;
+  border-color: black;
+  border-radius: 5px;
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  background-color: #eee;
+  backface-visibility: visible;
+  top: calc(var(--size) * -.5);
+  left: calc(var(--size) * -.5);
+}
+.top {
+
+  background-color: rgb(255,0,0);
+  transform: rotateX(90deg) translateZ(calc(var(--size) * .5));
+}
+.bottom {
+  background-color: rgb(255,0,0);
+  transform: rotateX(90deg) translateZ(calc(var(--size) * -.5));
+}
+.left {
+
+  background-color: rgb(255,0,0);
+  transform: rotateY(90deg) translateZ(calc(var(--size) * .5));
+}
+.right {
+
+  background-color: rgb(255,0,0);
+  transform: rotateY(90deg) translateZ(calc(var(--size) * -.5));
+}
+.front {
+
+  background-color: rgb(255,0,0);
+  transform: translateZ(calc(var(--size) * .5));
+}
+.back {
+
+  background-color: rgb(255,0,0);
+  transform: translateZ(calc(var(--size) * -.5));
+}
+
+
 .spacing-div {
-  min-height: 45vh;
+  min-height: 100vh;
 }
 
 
 .lightsDiv {
   display: flex;
+  position:relative;
   justify-content: center;
   align-content: center;
-  background-color: rgb(206, 22, 22);
+  background-color: rgb(255,0,0);
   margin-left: 5%;
   margin-right: 5%;
   border-radius:25px;
-  padding: 3px;
-  min-height: 100vh;
-  animation: example 2.5s linear;
+  padding: 4px;
+  height: 700px;
+  width: 1000px;
+  animation: example 0.5s linear;
   animation-iteration-count: infinite;
+  -webkit-box-shadow: 0 0 50px rgb(255,0,0);
+        box-shadow: 0 0 50px rgb(255,0,0);
 
 }
 
@@ -42,6 +112,11 @@
   min-height: 100%;
   min-width: 100%;
   z-index: 1;
+  color: white;
+  align-items: center;
+  display:flex;
+  justify-content: center;
+  font-size:100px;
 }
 
 
@@ -49,39 +124,64 @@
 @keyframes example{
   100%,0%{
     background-color: rgb(255,0,0);
+    box-shadow: 0 0 50px rgb(255,0,0);
   }
   8%{
     background-color: rgb(255,127,0);
+    box-shadow: 0 0 50px rgb(255,127,0);
   }
   16%{
     background-color: rgb(255,255,0);
+    box-shadow: 0 0 50px (255,255,0);
   }
   25%{
     background-color: rgb(127,255,0);
+    box-shadow: 0 0 50px rgb(127,255,0);
   }
   33%{
     background-color: rgb(0,255,0);
+    box-shadow: 0 0 50px (0,255,0);
   }
   41%{
     background-color: rgb(0,255,127);
+    box-shadow: 0 0 50px rgb(0,255,127);
   }
   50%{
     background-color: rgb(0,255,255);
+    box-shadow: 0 0 50px rgb(0,255,255);
   }
   58%{
     background-color: rgb(0,127,255);
+    box-shadow: 0 0 50px rgb(0,127,255);
   }
   66%{
     background-color: rgb(0,0,255);
+    box-shadow: 0 0 50px rgb(0,0,255);
   }
   75%{
     background-color: rgb(127,0,255);
+    box-shadow: 0 0 50px rgb(127,0,255);
   }
   83%{
     background-color: rgb(255,0,255);
+    box-shadow: 0 0 50px rgb(255,0,255);
   }
   91%{
     background-color: rgb(255,0,127);
+    box-shadow: 0 0 50px rgb(255,0,127);
   }
   
+}
+
+
+
+
+:root * {
+  /* Pause the animation */
+  animation-play-state: paused;
+  /* Bind the animation to scroll */
+  animation-delay: calc(var(--scroll) * -1s);
+  /* These last 2 properites clean up overshoot weirdness */
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
 }
