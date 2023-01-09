@@ -42,7 +42,7 @@
   animation: example 0.5s linear;
   border-style: groove;
   border-color: black;
-  border-radius: 5px;
+  border-width: 1px;
   position: absolute;
   width: var(--size);
   height: var(--size);
