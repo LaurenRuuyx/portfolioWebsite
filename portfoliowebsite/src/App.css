@@ -1,20 +1,27 @@
-.App {
+@import url('https://fonts.cdnfonts.com/css/common-pixel');
+@import url('https://fonts.cdnfonts.com/css/fanda-sans');
+
+  .App {
   background-color:#282c34;
   min-height: 500vh;
-  align-items: center;
+  z-index: 0;
 }
 
 .App-header {
   background-color: #282c34;
   min-height: 10vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
   text-align: center;
 }
+
+#maintitle {
+  font-size: 80px;
+  animation: dissapear 0.1s linear;
+  animation-iteration-count: 1;
+}
+
 
 .cube-wrap {
   --size: 30vmin;
@@ -24,17 +31,17 @@
   width: 0;
   height: 0;
   perspective: 100vmin;
+  z-index: 1;
 }
 .cube {
   transform-style: preserve-3d;
-  transform: rotateX(0deg) rotateZ(45deg) rotateY(-45deg);
+  transform: rotateX(360deg) rotateZ(45deg) rotateY(-45deg);
   animation: cube 0.5s linear;
-  z-index: -1;
 }
 
 @keyframes cube {
   to {
-    transform: rotateX(360deg) rotateZ(45deg) rotateY(-45deg);
+    transform: rotateX(0deg) rotateZ(45deg) rotateY(-45deg);
   }
 }
 
@@ -50,6 +57,7 @@
   backface-visibility: visible;
   top: calc(var(--size) * -.5);
   left: calc(var(--size) * -.5);
+  filter: brightness(35%);
 }
 .top {
 
@@ -86,12 +94,16 @@
   min-height: 100vh;
 }
 
+#secondSpacer {
+  min-height: 55vh;
+}
+
+
+
 
 .lightsDiv {
-  display: flex;
-  position:relative;
-  justify-content: center;
-  align-content: center;
+  filter: brightness(90%);
+  position: relative;
   background-color: rgb(255,0,0);
   margin-left: 5%;
   margin-right: 5%;
@@ -99,26 +111,91 @@
   padding: 4px;
   height: 700px;
   width: 1000px;
+  z-index: 1;
   animation: example 0.5s linear;
   animation-iteration-count: infinite;
   -webkit-box-shadow: 0 0 50px rgb(255,0,0);
         box-shadow: 0 0 50px rgb(255,0,0);
+  
 
+}
+
+#lightsDiv2{
+  position: relative;
+  left:47%;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  position:fixed;
+  top:0%;
+  z-index: 0;
+  filter: brightness(60%);
 }
 
 .contentDiv {
+  font-family: 'Fanda Sans', sans-serif;
   background-color:rgb(0, 0, 0);
   border-radius: 25px;
   min-height: 100%;
-  min-width: 100%;
-  z-index: 1;
+  z-index: 2;
   color: white;
-  align-items: center;
   display:flex;
-  justify-content: center;
-  font-size:100px;
+  flex-direction:column;
 }
 
+.textC{
+  margin: 20px;
+  font-size: 23px;
+}
+
+.titleCard {
+  margin: 5px;
+  font-size: 23px;
+  text-align: center;
+}
+
+.content {
+  font-family: 'Fanda Sans', sans-serif;
+  position: absolute;
+  width: 100%;
+  height:auto;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  animation: dissapear 0.1s linear;
+  animation-iteration-count: 1;
+}
+
+
+#underCube{
+  position: absolute;
+  margin-top: 50%;
+}
+
+@keyframes dissapear{
+  to{
+    font-size: 0px;
+    }
+}
+
+
+.content h1{ 
+  font-size: 70px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px rgb(0, 0, 0);
+}
+
+.content h2{
+  display: inline-block; 
+  justify-content: center;  
+}
 
 
 @keyframes example{
@@ -181,7 +258,16 @@
   animation-play-state: paused;
   /* Bind the animation to scroll */
   animation-delay: calc(var(--scroll) * -1s);
+  
   /* These last 2 properites clean up overshoot weirdness */
   animation-iteration-count: infinite;
   animation-fill-mode: both;
+}
+
+:root .content, #maintitle {
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+
+  
 }
