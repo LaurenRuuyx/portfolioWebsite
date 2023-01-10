@@ -79,6 +79,41 @@ function App() {
           </div>
         </div>
       </div>
+      <div className="spacing-div" id="secondSpacer"></div>
+      <div className="lightsDiv">
+        <div className="contentDiv">
+          <div className="titleCard">
+            <h1>Technologies</h1>
+          </div>
+          <div className="textC">
+            <h2>
+              <ul>
+                <li>Java (Main programming language)</li>
+                <li>Python</li>
+                <li>C++ (Beginner)</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>MySQL</li>
+                <li>SpringBoot</li>
+                <li>Visual Paradigm</li>
+                <li>SPSS</li>
+                <li>Virtual Box</li>
+                <li>Strong Object-Oriented Programming Skills</li>
+              </ul>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div className="spacing-div" id="secondSpacer"></div>
+      <div className="lightsDiv" id="footer">
+        <div className="contentDiv">
+          <div className="titleCard">
+            <h1>Links & Projects</h1>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

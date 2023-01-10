@@ -46,7 +46,7 @@
 }
 
 .side {
-  animation: example 0.5s linear;
+  animation: example 1s linear;
   border-style: groove;
   border-color: black;
   border-width: 1px;
@@ -112,7 +112,7 @@
   height: 700px;
   width: 1000px;
   z-index: 1;
-  animation: example 0.5s linear;
+  animation: example 1s linear;
   animation-iteration-count: infinite;
   -webkit-box-shadow: 0 0 50px rgb(255,0,0);
         box-shadow: 0 0 50px rgb(255,0,0);
@@ -120,9 +120,14 @@
 
 }
 
+#footer {
+  width: auto;
+}
+
+
 #lightsDiv2{
   position: relative;
-  left:47%;
+  left:49%;
 }
 
 video {
@@ -257,7 +262,7 @@ video {
   /* Pause the animation */
   animation-play-state: paused;
   /* Bind the animation to scroll */
-  animation-delay: calc(var(--scroll) * -1s);
+  animation-delay: calc(var(--scroll) * -0.79s);
   
   /* These last 2 properites clean up overshoot weirdness */
   animation-iteration-count: infinite;
