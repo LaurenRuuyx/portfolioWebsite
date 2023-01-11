@@ -2,6 +2,24 @@ import logo from './logo.svg';
 import './App.css';
 import video from './video.mp4';
 
+function onClickGithub(){
+    window.open("https://github.com/LaurenRuuyx");
+}
+function onClickDemon(){
+  window.open("https://github.com/LaurenRuuyx/DemonSamurai");
+}
+function onClickSeating(){
+  window.open("https://github.com/LaurenRuuyx/SeatingPlanSystem");
+}
+function onClickDrinking(){
+  window.open("https://github.com/LaurenRuuyx/SafeDrinkingApp");
+}
+function onClickLinkedIn(){
+  window.open("https://www.linkedin.com/in/laurentiu-cristian-miscoci-479713233/");
+}
+function onClickEmail(){
+  window.open("mailto:laurmscc@gmail.com");
+}
 function App() {
   window.addEventListener('scroll', () => {
     document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
@@ -111,6 +129,34 @@ function App() {
         <div className="contentDiv">
           <div className="titleCard">
             <h1>Links & Projects</h1>
+          </div>
+          <div className="buttonDivs">
+            <div className="links" onClick={onClickDemon}>
+              <h1>Demon Samurai</h1>
+              <h3>Python game made with the PyGame library</h3>
+              <p>(A-Level Final Project)</p>
+            </div>
+            <div className="links" onClick={onClickDrinking}>
+              <h1>Safe Drinking App</h1>
+              <h3>Tracks the amount of alcohol consumed</h3>
+              <p>(Java project done for AstonHack2021)</p>
+            </div>
+            <div className="links" onClick={onClickLinkedIn}>
+              <h1>LinkedIn</h1>
+            </div>
+            <div className="links" onClick={onClickSeating}>
+              <h1>Airport Seating System</h1>
+              <h3>Dynamic seating plan system coded in Java</h3>
+              <p>(First-Year Group Project)</p>
+            </div>
+            <div className="links" onClick={onClickGithub}>
+              <h1>GitHub Profile</h1>
+            </div>
+            <div className="links" onClick={onClickEmail}>
+              <h1>Email</h1>
+              <h3>laurmscc@gmail.com</h3>
+            </div>
+            
           </div>
         </div>
       </div>

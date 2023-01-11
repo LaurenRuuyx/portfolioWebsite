@@ -3,7 +3,7 @@
 
   .App {
   background-color:#282c34;
-  min-height: 500vh;
+  min-height: 520vh;
   z-index: 0;
 }
 
@@ -122,6 +122,7 @@
 
 #footer {
   width: auto;
+  height: auto;
 }
 
 
@@ -175,6 +176,79 @@ video {
   color: rgb(255, 255, 255);
   animation: dissapear 0.1s linear;
   animation-iteration-count: 1;
+}
+
+.buttonDivs{
+  display:grid;
+  justify-items: center;
+  margin-bottom: 4%;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 4;
+  transition: 0.1s;
+}
+
+.links {
+  display: flex;
+  margin-bottom: 5%;
+  border-radius: 25px;
+  border: solid;
+  color:white;
+  border-color: white;
+  background-color: rgb(0, 0, 0);
+  height: 400px;
+  width: 500px;
+  z-index: 4;
+  animation: borderColor 1s linear;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buttonDivs :hover{
+  background-color: white;
+  color: black;
+
+}
+
+@keyframes borderColor{
+  100%,0%{
+    border-color: rgb(255,0,0);
+  }
+  8%{
+    border-color: rgb(255,127,0);
+  }
+  16%{
+    border-color: rgb(255,255,0);
+  }
+  25%{
+    border-color: rgb(127,255,0);
+  }
+  33%{
+    border-color: rgb(0,255,0);
+  }
+  41%{
+    border-color: rgb(0,255,127);
+  }
+  50%{
+    border-color: rgb(0,255,255);
+  }
+  58%{
+    border-color: rgb(0,127,255);
+  }
+  66%{
+    border-color: rgb(0,0,255);
+  }
+  75%{
+    border-color: rgb(127,0,255);
+  }
+  83%{
+    border-color: rgb(255,0,255);
+  }
+  91%{
+    border-color: rgb(255,0,127);
+  }
 }
 
 
