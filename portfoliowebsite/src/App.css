@@ -217,6 +217,8 @@ video {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transition: 150ms ease-in-out;
+  cursor: pointer;
 }
 
 .buttonDivs :hover{
