@@ -36,17 +36,14 @@
 }
 .cube {
   overflow: visible;
-  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-transform: rotateX(360deg) rotateZ(45deg) rotateY(-45deg) rotate(0deg);
-  transform: rotateX(360deg) rotateZ(45deg) rotateY(-45deg) rotate(0deg);
-  -webkit-animation: cube 0.5s linear;
-  animation: cube 0.5s linear;
+  transform: rotateX(360deg) rotateZ(45deg) rotateY(-45deg);
+  animation: cube 1s linear;
 }
 
 @keyframes cube {
   to {
-    transform: rotateX(0deg) rotateZ(45deg) rotateY(-45deg) rotate(0deg);
+    transform: rotateX(0deg) rotateZ(45deg) rotateY(-45deg);
   }
 }
 
