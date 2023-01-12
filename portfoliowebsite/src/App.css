@@ -37,14 +37,14 @@
 .cube {
   overflow: visible;
   transform-style: preserve-3d;
-  transform: rotate3d(1,1,1,45deg);
-  -webkit-transform: rotate3d(1,1,1,45deg);
+  transform: rotate3d(1,1,1,0deg);
+  -webkit-transform: rotate3d(1,1,1,0deg);
   animation: cube 1s linear;
 }
 
 @keyframes cube {
   to {
-    transform: rotateX(0deg) rotateZ(45deg) rotateY(-45deg);
+    transform: rotate3d(-1,-1,1,360deg);
   }
 }
 
