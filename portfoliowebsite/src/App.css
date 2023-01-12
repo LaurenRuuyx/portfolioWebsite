@@ -38,15 +38,15 @@
   overflow: visible;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-transform: rotate3d(1,1,1,45deg);
-  transform: rotate3d(1,1,1,45deg);
+  -webkit-transform: rotateX(360deg) rotateZ(45deg) rotateY(-45deg) rotate(0deg);
+  transform: rotateX(360deg) rotateZ(45deg) rotateY(-45deg) rotate(0deg);
   -webkit-animation: cube 0.5s linear;
   animation: cube 0.5s linear;
 }
 
 @keyframes cube {
   to {
-    transform: rotateX(0deg) rotateZ(45deg) rotateY(-45deg);
+    transform: rotateX(0deg) rotateZ(45deg) rotateY(-45deg) rotate(0deg);
   }
 }
 
