@@ -37,7 +37,7 @@
 .cube {
   overflow: visible;
   transform-style: preserve-3d;
-  -webkit-transform: rotate3d(1,1,1,0deg);
+  -webkit-transform: preserve-3d;
   transform: rotate3d(1,1,1,0deg);
   -webkit-transform: rotate3d(1,1,1,0deg);
   animation: cube 1s linear;
@@ -45,6 +45,7 @@
 
 @keyframes cube {
   to {
+    -webkit-transform: rotate3d(-1,-1,1,360deg);
     transform: rotate3d(-1,-1,1,360deg);
   }
 }
