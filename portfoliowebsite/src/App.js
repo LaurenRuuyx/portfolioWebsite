@@ -52,6 +52,7 @@ function App() {
         <h2>scroll down</h2>
       </div>
       <div className="spacing-div"></div>
+      <div className="lightsDiv-container">
       <div className="lightsDiv">
         <div className="contentDiv">
           <div className="titleCard">
@@ -66,65 +67,67 @@ function App() {
           
         </div>
       </div>
-      <div className="spacing-div" id="secondSpacer"></div>
-      <div className="lightsDiv" id="lightsDiv2">
-        <div className="contentDiv">
-          <div className="titleCard">
-              <h1>University Studies</h1>
-            </div>
-          <div className="textC">
-            <h2> First-Year Modules</h2>
-            <h3>
-              <ul>
-                <li>Introductory Programming (A*)</li>
-                <li>Logic and Computation (A+)</li>
-                <li>Data and Information (A+) </li>
-                <li>Year 1 Group Project (A*)</li>
-                <li>Information Systems and Organisations (A)</li>
-              </ul>
-            </h3>
-            <h2>Second-Year Modules</h2>
-            <h3>
-              <ul>
-                <li>Algorithms and their Applications</li>
-                <li>Year 2 Group Project</li>
-                <li>Software Development and Management</li>
-                <li>Networks and Operating Systems</li>
-                <li>Usability Engineering</li>
-              </ul>
-            </h3>
+      </div>
+      <div className="lightsDiv2-container">
+        <div className="lightsDiv" id="lightsDiv2">
+          <div className="contentDiv">
+            <div className="titleCard">
+                <h1>University Studies</h1>
+              </div>
+            <div className="textC">
+              <h2> First-Year Modules</h2>
+              <h3>
+                <ul>
+                  <li>Introductory Programming (A*)</li>
+                  <li>Logic and Computation (A+)</li>
+                  <li>Data and Information (A+) </li>
+                  <li>Year 1 Group Project (A*)</li>
+                  <li>Information Systems and Organisations (A)</li>
+                </ul>
+              </h3>
+              <h2>Second-Year Modules</h2>
+              <h3>
+                <ul>
+                  <li>Algorithms and their Applications</li>
+                  <li>Year 2 Group Project</li>
+                  <li>Software Development and Management</li>
+                  <li>Networks and Operating Systems</li>
+                  <li>Usability Engineering</li>
+                </ul>
+              </h3>
 
+            </div>
           </div>
         </div>
       </div>
-      <div className="spacing-div" id="secondSpacer"></div>
-      <div className="lightsDiv">
-        <div className="contentDiv">
-          <div className="titleCard">
-            <h1>Technologies</h1>
-          </div>
-          <div className="textC">
-            <h2>
-              <ul>
-                <li>Java (Main programming language)</li>
-                <li>Python</li>
-                <li>C++ (Beginner)</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>MySQL</li>
-                <li>SpringBoot</li>
-                <li>Visual Paradigm</li>
-                <li>SPSS</li>
-                <li>Virtual Box</li>
-                <li>Strong Object-Oriented Programming Skills</li>
-              </ul>
-            </h2>
+      <div className="lightsDiv-container">
+        <div className="lightsDiv">
+          <div className="contentDiv">
+            <div className="titleCard">
+              <h1>Technologies</h1>
+            </div>
+            <div className="textC">
+              <h2>
+                <ul>
+                  <li>Java (Main programming language)</li>
+                  <li>Python</li>
+                  <li>C++ (Beginner)</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>MySQL</li>
+                  <li>SpringBoot</li>
+                  <li>Visual Paradigm</li>
+                  <li>SPSS</li>
+                  <li>Virtual Box</li>
+                  <li>Strong Object-Oriented Programming Skills</li>
+                </ul>
+              </h2>
+            </div>
           </div>
         </div>
       </div>
-      <div className="spacing-div" id="secondSpacer"></div>
       <div className="lightsDiv" id="footer">
         <div className="contentDiv">
           <div className="titleCard">
