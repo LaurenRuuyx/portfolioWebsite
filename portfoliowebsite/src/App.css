@@ -363,6 +363,28 @@ video {
     font-size: 50px;
   }
 }
+@media (max-width: 500px){
+  .content{
+    font-size: 10px;
+  }
+  #maintitle{
+    font-size: 30px;
+  }
+  .textC{
+    font-size: 13px;
+  }
+  .lightsDiv{
+    height: auto;
+  }
+  .links{
+    height: 120px;
+    width: 150px;
+    font-size: 6px;
+  }
+  #underCube{
+    margin-top: 160%;
+  }
+}
 
 
 
