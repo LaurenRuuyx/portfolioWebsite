@@ -365,7 +365,7 @@ video {
 }
 @media (max-width: 500px){
   .content{
-    font-size: 10px;
+    font-size: 8px;
   }
   #maintitle{
     font-size: 25px;
