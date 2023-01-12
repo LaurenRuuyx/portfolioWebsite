@@ -198,14 +198,16 @@ video {
 }
 
 .buttonDivs{
-  display:grid;
-  justify-items: center;
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  gap: 10px;
   margin-bottom: 4%;
-  grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   min-height: 100%;
   z-index: 4;
   transition: 0.1s;
+  justify-content: center;
 }
 
 .links {
