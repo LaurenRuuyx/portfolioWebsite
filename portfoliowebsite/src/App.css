@@ -36,17 +36,19 @@
 }
 .cube {
   overflow: visible;
-  transform-style: preserve-3d;
   -webkit-transform: preserve-3d;
-  transform: rotate3d(1,1,1,0deg);
-  -webkit-transform: rotate3d(1,1,1,0deg);
-  animation: cube 1s linear;
+  transform-style: preserve-3d;
+  transform: rotate3d(360deg,45deg,-45deg,1);
+  -webkit-transform: rotate3d(360deg,45deg,-45deg,1);
+  animation: cube 0.1s linear;
 }
 
 @keyframes cube {
-  to {
-    -webkit-transform: rotate3d(-1,-1,1,360deg);
-    transform: rotate3d(-1,-1,1,360deg);
+  from{
+    transform: rotateX(360deg) rotateZ(45deg) rotateY(-45deg);
+  }
+  to{
+  transform: rotateX(0deg) rotateZ(45deg) rotateY(-45deg);
   }
 }
 
