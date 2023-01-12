@@ -58,7 +58,7 @@
   backface-visibility: visible;
   top: calc(var(--size) * -.5);
   left: calc(var(--size) * -.5);
-  filter: brightness(35%);
+  filter: brightness(50%);
 }
 .top {
 
