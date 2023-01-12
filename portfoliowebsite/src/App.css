@@ -379,10 +379,10 @@ video {
   .links{
     height: 120px;
     width: 150px;
-    font-size: 6px;
+    font-size: 5px;
   }
   #underCube{
-    margin-top: 160%;
+    margin-top: 180%;
   }
 }
 
