@@ -366,13 +366,17 @@ video {
 
 :root * {
   /* Pause the animation */
-  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+        animation-play-state: paused;
   /* Bind the animation to scroll */
-  animation-delay: calc(var(--scroll) * -0.79s);
+  -webkit-animation-delay: calc(var(--scroll) * -0.79s);
+        animation-delay: calc(var(--scroll) * -0.79s);
   
   /* These last 2 properites clean up overshoot weirdness */
-  animation-iteration-count: infinite;
-  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+  -webkit-anmation-fill-mode: both;
+        animation-fill-mode: both;
 }
 
 :root .content, #maintitle {
