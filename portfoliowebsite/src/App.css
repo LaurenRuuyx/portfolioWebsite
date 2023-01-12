@@ -35,9 +35,12 @@
   z-index: 1;
 }
 .cube {
-  transform-style: preserve-3d;
-  transform: rotateX(360deg) rotateZ(45deg) rotateY(-45deg);
-  animation: cube 0.5s linear;
+  -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+  -webkit-transform: rotateX(360deg) rotateZ(45deg) rotateY(-45deg);
+        transform: rotateX(360deg) rotateZ(45deg) rotateY(-45deg);
+  -webkit-animation: cube 0.5s linear;
+        animation: cube 0.5s linear;
 }
 
 @keyframes cube {
@@ -47,7 +50,8 @@
 }
 
 .side {
-  animation: example 1s linear;
+  -webkit-animation: example 1s linear;
+        animation: example 1s linear;
   border-style: groove;
   border-color: black;
   border-width: 1px;
@@ -61,33 +65,34 @@
   filter: brightness(50%);
 }
 .top {
-
   background-color: rgb(255,0,0);
-  transform: rotateX(90deg) translateZ(calc(var(--size) * .5));
+  -webkit-transform: rotateX(90deg) translateZ(calc(var(--size) * .5));
+        transform: rotateX(90deg) translateZ(calc(var(--size) * .5));
 }
 .bottom {
   background-color: rgb(255,0,0);
-  transform: rotateX(90deg) translateZ(calc(var(--size) * -.5));
+  -webkit-transform: rotateX(90deg) translateZ(calc(var(--size) * -.5));
+        transform: rotateX(90deg) translateZ(calc(var(--size) * -.5));
 }
 .left {
-
   background-color: rgb(255,0,0);
-  transform: rotateY(90deg) translateZ(calc(var(--size) * .5));
+  -webkit-transform: rotateY(90deg) translateZ(calc(var(--size) * .5));
+        transform: rotateY(90deg) translateZ(calc(var(--size) * .5));
 }
 .right {
-
   background-color: rgb(255,0,0);
-  transform: rotateY(90deg) translateZ(calc(var(--size) * -.5));
+  -webkit-transform: rotateY(90deg) translateZ(calc(var(--size) * -.5));
+        transform: rotateY(90deg) translateZ(calc(var(--size) * -.5));
 }
 .front {
-
   background-color: rgb(255,0,0);
-  transform: translateZ(calc(var(--size) * .5));
+  -webkit-transform: translateZ(calc(var(--size) * .5));
+        transform: translateZ(calc(var(--size) * .5));
 }
 .back {
-
   background-color: rgb(255,0,0);
-  transform: translateZ(calc(var(--size) * -.5));
+  -webkit-transform: translateZ(calc(var(--size) * -.5));
+        transform: translateZ(calc(var(--size) * -.5));
 }
 
 
