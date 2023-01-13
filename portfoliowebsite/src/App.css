@@ -207,7 +207,11 @@ video {
   min-height: 100%;
   z-index: 4;
   transition: 0.1s;
-  justify-content: center;
+  justify-content:center;
+}
+
+.links h1{
+  text-align: center;
 }
 
 .links {
