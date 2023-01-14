@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import video from './video.mp4';
+import cv from './CV.pdf';
 
 function onClickGithub(){
     window.open("https://github.com/LaurenRuuyx");
@@ -12,7 +13,7 @@ function onClickSeating(){
   window.open("https://github.com/LaurenRuuyx/SeatingPlanSystem");
 }
 function onClickDrinking(){
-  window.open("https://github.com/LaurenRuuyx/SafeDrinkingApp");
+  window.open(cv);
 }
 function onClickLinkedIn(){
   window.open("https://www.linkedin.com/in/laurentiu-cristian-miscoci-479713233/");
@@ -140,9 +141,7 @@ function App() {
               <p>(A-Level Final Project)</p>
             </div>
             <div className="links" onClick={onClickDrinking}>
-              <h1>Safe Drinking App</h1>
-              <h3>Tracks the amount of alcohol consumed</h3>
-              <p>(Java project done for AstonHack2021)</p>
+              <h1>Full CV</h1>
             </div>
             <div className="links" onClick={onClickLinkedIn}>
               <h1>LinkedIn</h1>
@@ -166,5 +165,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
