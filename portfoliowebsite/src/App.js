@@ -61,7 +61,7 @@ function App() {
 
           </div>
           <div className="textC">
-            <h2>I am Lauren and I am an aspiring Software Engineer currently in my second year studying Comptuer Science at Brunel University Lonodn. In my spare time I enjoy playing games with my friends, reading, as well as learning new technologies to work with.</h2>
+            <h2>I am Lauren and I am an aspiring Software Engineer currently in my second year studying Comptuer Science at Brunel University London. In my spare time I enjoy playing games with my friends, reading, as well as learning new technologies to work with.</h2>
             <h2>I am a very flexible individual with the ability to adapt to any situation on the spot, as well as an innate ability for learning new things at a fast pace.</h2>
             <h2>Throughout my studies and personal projects I have developed the ability to write clean, high-quality code as well as work as part of a team in order to create larger scale projects</h2>
           </div>
