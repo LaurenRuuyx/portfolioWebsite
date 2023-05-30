@@ -90,7 +90,7 @@ function App() {
               <h3>
                 <ul>
                   <li>Algorithms and their Applications</li>
-                  <li>Year 2 Group Project</li>
+                  <li>Year 2 Group Project (A*)</li>
                   <li>Software Development and Management</li>
                   <li>Networks and Operating Systems</li>
                   <li>Usability Engineering</li>
