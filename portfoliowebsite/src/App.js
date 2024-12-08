@@ -3,20 +3,11 @@ import './App.css';
 import video from './video.mp4';
 import cv from './CV.pdf';
 
-function onClickGithub(){
-    window.open("https://github.com/LaurenRuuyx");
+function onClickLink(link){
+  window.open(link);
 }
-function onClickDemon(){
-  window.open("https://github.com/LaurenRuuyx/DemonSamurai");
-}
-function onClickSeating(){
-  window.open("https://github.com/LaurenRuuyx/SeatingPlanSystem");
-}
-function onClickDrinking(){
+function onClickCV(){
   window.open(cv);
-}
-function onClickLinkedIn(){
-  window.open("https://www.linkedin.com/in/laurentiu-cristian-miscoci-479713233/");
 }
 function onClickEmail(){
   window.open("mailto:laurmscc@gmail.com");
@@ -61,7 +52,7 @@ function App() {
 
           </div>
           <div className="textC">
-            <h2>I am Lauren and I am an aspiring Software Engineer currently in my second year studying Computer Science at Brunel University London. In my spare time I enjoy playing games with my friends, reading, as well as learning new technologies to work with.</h2>
+            <h2>My name is Lauren and I am a Software Developer currently in my final year studying Computer Science at Brunel University London. In my spare time I enjoy playing games with my friends, reading, as well as exploring new technologies to work with.</h2>
             <h2>I am a very flexible individual with the ability to adapt to any situation on the spot, as well as an innate ability for learning new things at a fast pace.</h2>
             <h2>Throughout my studies and personal projects I have developed the ability to write clean, high-quality code as well as work as part of a team in order to create larger scale projects.</h2>
           </div>
@@ -73,27 +64,27 @@ function App() {
         <div className="lightsDiv" id="lightsDiv2">
           <div className="contentDiv">
             <div className="titleCard">
-                <h1>University Studies</h1>
+                <h1>Work Experience</h1>
               </div>
             <div className="textC">
-              <h2> First-Year Modules</h2>
+              <h2> Innovate UK Smart Grant Project (Part-Time)</h2>
               <h3>
                 <ul>
-                  <li>Introductory Programming (A*)</li>
-                  <li>Logic and Computation (A+)</li>
-                  <li>Data and Information (A+) </li>
-                  <li>Year 1 Group Project (A*)</li>
-                  <li>Information Systems and Organisations (A)</li>
+                  <li>Worked with Python, Isaac Sim, ROS, and 3D Point Clouds</li>
+                  <li>Detect specific object locations from a robot camera point cloud reading</li>
+                  <li>Pre-processing and manipulation of point cloud data in Python</li>
+                  <li>Object classification</li>
+                  <li>Worked as part of a team</li>
                 </ul>
               </h3>
-              <h2>Second-Year Modules</h2>
+              <h2>Full-Stack Developer at Feral Interactive (London, Full-Time)</h2>
               <h3>
                 <ul>
-                  <li>Algorithms and their Applications</li>
-                  <li>Year 2 Group Project (A*)</li>
-                  <li>Software Development and Management</li>
-                  <li>Networks and Operating Systems</li>
-                  <li>Usability Engineering</li>
+                  <li>Worked in a game development company as a full stack developer</li>
+                  <li>Java backend developemnt. Javascript, HTML, CSS frontend development</li>
+                  <li>Database handling, upgrading, etc. (MySQL)</li>
+                  <li>Knowledge of Unix terminal, bash scripting, etc.</li>
+                  <li>Worked as part of the Internal Tools department</li>
                 </ul>
               </h3>
 
@@ -105,26 +96,29 @@ function App() {
         <div className="lightsDiv">
           <div className="contentDiv">
             <div className="titleCard">
-              <h1>Technologies</h1>
+              <h1>Work Experience (continued)</h1>
             </div>
             <div className="textC">
-              <h2>
+              <h2> Front-End Developer for HecoAnalytics (London,Part-Time)</h2>
+              <h3>
                 <ul>
-                  <li>Java (Main programming language)</li>
-                  <li>Python</li>
-                  <li>C++ (Beginner)</li>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                  <li>React</li>
-                  <li>MySQL</li>
-                  <li>SpringBoot</li>
-                  <li>Visual Paradigm</li>
-                  <li>SPSS</li>
-                  <li>Virtual Box</li>
-                  <li>Strong Object-Oriented Programming Skills</li>
+                  <li>Worked with React and AWS</li>
+                  <li>Developed an application to track hospital costs and calculate statistics based on those costs</li>
+                  <li>Was part of the Senior Leadership team</li>
+                  <li>Onboarded new starters, teaching them about the project, reviewing code and distributing tasks</li>
+                  <li>Managed a small team of about 3 people</li>
                 </ul>
-              </h2>
+              </h3>
+              <h2>Teaching Assistant Brunel University(London, Part-Time)</h2>
+              <h3>
+                <ul>
+                  <li>Worked as a teaching assistant for the Computer Science department</li>
+                  <li>Developed teaching and speaking skills in order to help others</li>
+                  <li>Further solidified knowledge that I myself was learning the previous years</li>
+                  <li>Helped the department and lecturers by aiding in the Laboratory Sessions</li>
+                </ul>
+              </h3>
+
             </div>
           </div>
         </div>
@@ -135,24 +129,24 @@ function App() {
             <h1>Links & Projects</h1>
           </div>
           <div className="buttonDivs">
-            <div className="links" onClick={onClickDemon}>
-              <h1>Demon Samurai</h1>
-              <h3>Python game made with the PyGame library</h3>
-              <p>(A-Level Final Project)</p>
+            <div className="links" onClick={() => onClickLink("https://github.com/LaurenRuuyx/The_Giant")}>
+              <h1>The Giant</h1>
+              <h3>C# game made with Unity</h3>
+              <p>(Final Year Coursework)</p>
             </div>
-            <div className="links" onClick={onClickDrinking}>
+            <div className="links" onClick={onClickCV}>
               <h1>Full CV</h1>
             </div>
-            <div className="links" onClick={onClickLinkedIn}>
+            <div className="links" onClick={() => onClickLink("https://www.linkedin.com/in/laurentiu-cristian-miscoci-479713233/")}>
               <h1>LinkedIn</h1>
             </div>
-            <div className="links" onClick={onClickSeating}>
+            <div className="links" onClick={() => onClickLink("https://github.com/LaurenRuuyx/SeatingPlanSystem")}>
               <h1>Airport Seating System</h1>
               <h3>Dynamic seating plan system coded in Java</h3>
               <p>(First-Year Group Project)</p>
             </div>
-            <div className="links" onClick={onClickGithub}>
-              <h1>GitHub Profile</h1>
+            <div className="links" onClick={() => onClickLink("https://github.com/LaurenRuuyx")}>
+              <h1>Other Projects on my GitHub</h1>
             </div>
             <div className="links" onClick={onClickEmail}>
               <h1>Email</h1>
